@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>My Account</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    
+    <!-- FlatICON -->
+    <link rel='stylesheet' href="vendor/flaticon/flaticon.css" />
+    
+    <!-- Magnific Popup -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
+
+    <!-- Main CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+  </head>
+
+  <body id="inline-popups"> 
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#"><img class="" src="img/logo.png" alt=""></a>
+        <ul class="list-inline top-right-list">
+            <li class="list-inline-item">
+                <a href="#search-box-popup" data-effect="mfp-zoom-out" class="light-box-popup">
+                    <span class="icon-magnifier icons"></span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#user-box-popup" data-effect="mfp-zoom-in" class="light-box-popup">
+                   <span class="flaticon-user"></span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <span class="mini-cart-icon js-offcanvas-trigger" data-offcanvas-trigger="off-canvas-right">
+                    <span class="icon-bag icons"></span>
+                    <span class="minicart-number">0</span>
+                </span>
+            </li>
+        </ul><!-- /.top-right-list -->
+      </div><!-- /.container -->
+    </nav><!-- /Navigation -->
+    
+    <div class="center-container">
+        <div class="home-center-header text-center">
+            <h1>My Account</h1>
+            <ul class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li>My Account</li>
+            </ul>
+        </div><!-- /.home-center-header -->
+        <ul class="page-links list-inline text-center">
+            <li class="list-inline-item"><a href="#">Shopping Cart</a></li>
+            <li class="list-inline-item active"><a href="#">my account</a></li>  
+            <li class="list-inline-item"><a href="#">logout</a></li>  
+        </ul>
+        <div class="my-account">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="my-account-left-content">
+                        <h2>My account</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="my-account.html">Dashboard</a></li>
+                            <li><a href="orders.html">Orders</a></li>
+                            <li><a href="request-selling.html">Request selling a book</a></li>
+                            <li class="active"><a href="history.html">History</a></li>
+                            <li><a href="account-details.html">Account details</a></li>
+                            <li><a href="billing-info.html">Billing Info</a></li>
+                            <li><a href="address.html">Address</a></li>
+                            <li><a href="logout.html">Logout</a></li>
+                        </ul>
+                    </div><!-- /.my-account-left-content -->
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-9">
+                    <div class="order-content">
+                        <div class="purchese-sold">
+                            <ul id="tabsJustified" class="nav nav-tabs">
+                              <li class="nav-item"><a href="" data-target="#purchesed" data-toggle="tab" class="nav-link active">Purchased</a></li>
+                              <li class="nav-item"><a href="" data-target="#sold" data-toggle="tab" class="nav-link">Sold</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                              <div id="purchesed" class="container tab-pane active">
+                                  <div class="table-responsive">
+                                    <table class="table ">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">ORDER</th>
+                                          <th scope="col">DATE</th>
+                                          <th scope="col">Delivery STATUS</th>
+                                          <th scope="col">TOTAL</th>
+                                          <th scope="col">ACTIONS</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">#7852</th>
+                                          <td>November 10, 2018 </td>
+                                          <td>On hold</td>
+                                          <td>$125.00 for 1 item</td>
+                                          <td><a href="#report-popup" data-effect="mfp-zoom-in"  class="light-box-popup">View</a></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">#7851</th>
+                                          <td>November 10, 2018 </td>
+                                          <td>On hold</td>
+                                          <td>$125.00 for 1 item</td>
+                                          <td><a href="#report-popup" data-effect="mfp-zoom-in"  class="light-box-popup">View</a></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">#7852</th>
+                                          <td>November 10, 2018 </td>
+                                          <td>On hold</td>
+                                          <td>$125.00 for 1 item</td>
+                                          <td><a href="#report-popup" data-effect="mfp-zoom-in"  class="light-box-popup">View</a></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">#7852</th>
+                                          <td>November 10, 2018 </td>
+                                          <td>On hold</td>
+                                          <td>$125.00 for 1 item</td>
+                                          <td><a href="#report-popup" data-effect="mfp-zoom-in"  class="light-box-popup">View</a></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">#7852</th>
+                                          <td>November 10, 2018 </td>
+                                          <td>Processing</td>
+                                          <td>$125.00 for 1 item</td>
+                                          <td><a href="#report-popup" data-effect="mfp-zoom-in"  class="light-box-popup">View</a></td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">#7852</th>
+                                          <td>November 10, 2018 </td>
+                                          <td>Processing</td>
+                                          <td>$125.00 for 1 item</td>
+                                          <td><a href="#report-popup" data-effect="mfp-zoom-in"  class="light-box-popup">View</a></td>
+                                        </tr>                                
+                                      </tbody>
+                                    </table>
+                                  </div>
+                              </div>
+                              <div id="sold" class="container tab-pane fade">
+                                  <h2 class="text-right total-sales-titile">Total sales: <strong>$200</strong></h2>
+                                  <div class="table-responsive">
+                                    <table class="table ">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">ORDER</th>
+                                          <th scope="col">DATE</th>
+                                          <th scope="col">Delivery STATUS</th>
+                                          <th scope="col">Price</th>
+                                          <th scope="col">Status</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">#7852</th>
+                                          <td>November 10, 2018 </td>
+                                          <td>On hold</td>
+                                          <td>$125.00 for 1 item</td>
+                                          <td>Sold</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">#7851</th>
+                                          <td>November 10, 2018 </td>
+                                          <td>On hold</td>
+                                          <td>$125.00 for 1 item</td>
+                                          <td>Sold</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">#7852</th>
+                                          <td>November 10, 2018 </td>
+                                          <td>On hold</td>
+                                          <td>$125.00 for 1 item</td>
+                                          <td>Sold</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">#7852</th>
+                                          <td>November 10, 2018 </td>
+                                          <td>On hold</td>
+                                          <td>$125.00 for 1 item</td>
+                                          <td>Sold</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">#7852</th>
+                                          <td>November 10, 2018 </td>
+                                          <td>Processing</td>
+                                          <td>$125.00 for 1 item</td>
+                                          <td>Sold</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">#7852</th>
+                                          <td>November 10, 2018 </td>
+                                          <td>Processing</td>
+                                          <td>$125.00 for 1 item</td>
+                                          <td>Sold</td>
+                                        </tr>                                
+                                      </tbody>
+                                    </table>
+                                  </div>
+                              </div>
+                            </div><!-- /.tab-content -->
+                        </div><!-- /.purchese-sold -->
+                        
+                    </div>  
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.my-account -->
+    </div><!-- /.center-container -->
+
+    <footer>
+        <div class="center-container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-widget-1">
+                        <img src="img/logo.png" alt="">
+                        <p class="copyright">© CourseTrader, Inc. 2018</p>
+                        <div class="socials style2">
+                          <a class="social-item" href="https://facebook.com" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                          <a class="social-item" href="https://twitter.com" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                          <a class="social-item" href="https://pinterest.com" target="_blank">
+                            <i class="fa fa-pinterest-p"></i>
+                          </a>
+                          <a class="social-item" href="https://nomos.famithemes.com/feed/" target="_blank">
+                            <i class="fa fa-rss"></i>
+                          </a>
+                        </div>
+                    </div><!-- footer-widget-1 -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h2 class="widgettitle">
+                            HELP
+                        </h2>
+                    </div>
+                </div><!-- /.col-lg-2 -->
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h2 class="widgettitle">
+                            SHOP
+                        </h2>
+                        <ul class="list-unstyled footer-shop-menu">
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">Order Tracking</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                        </ul>
+                    </div><!-- /.footer-widget -->
+                </div><!-- /.col-lg-2 -->
+                <div class="col-lg-4">
+                    <div class="footer-widget newsletter-widget">
+                        <h2 class="widgettitle">
+                            NEWSLETTER
+                        </h2>
+                        <div class="newsletter-subtitle">Sign up for our newsletter to receive special offers, news &amp; great events.</div>
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Email address here">
+                          <div class="input-group-append">
+                            <button  class="btn btn-dark" type="button" id="button-addon2"><img src="img/icon/mail.png" alt=""></button>
+                          </div>
+                        </div><!-- /.input-group -->
+                        <img class="img-fluid mt-4" src="img/pay-method.jpg" alt="">
+                    </div><!-- /.footer-widget -->
+                </div><!-- /.col-lg-4 -->
+            </div> <!-- /.row -->       
+        </div><!-- /.center-container -->
+    </footer><!-- /.footer -->
+
+
+    <!-- Request Popup-->
+    <div id="report-popup" class="report-popup white-popup mfp-with-anim mfp-hide">
+        <h2>Check out Details</h2>
+        <h4>Name of book: Lalalallalalalal  10th edition </h4>
+        <h4 class="condition-titile">Condition</h4>
+        <div class="report-btn-group" id="report-btn-group">
+          <button type="button" class="btn btn-light active">New</button>
+          <button type="button" class="btn btn-light">Very good</button>
+          <button type="button" class="btn btn-light active">Good</button>
+          <button type="button" class="btn btn-light">Moderate</button>
+          <button type="button" class="btn btn-light">Bad</button>
+        </div><!-- /.report-btn-group -->
+        <p>Selling price will be: <strong>$100</strong></p>
+        <button class="btn-dark btn">OK</button>
+    </div><!-- /Request Popup -->
+
+
+
+    <!-- Product Popup -->
+    <div id="product-popup-1" class="white-popup mfp-with-anim mfp-hide">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-fluid" src="img/product/product-big.jpg" alt="">
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-8">
+                <div class="product-summary">
+                    <h1>Portable Bluetooth Speaker</h1>
+                    <p class="price">$55.00 – $56.00</p>
+                    <h4>Intro</h4>
+                    <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    <div class="quantity">
+                        Quantity        
+                        <div class="control">
+                            <a class="btn-number qtyminus quantity-minus" href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                            <input type="text" data-step="1" data-min="1" data-max="" name="quantity" value="1" title="Qty" class="input-qty qty" size="4">
+                            <a class="btn-number qtyplus quantity-plus" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div><!-- /.quantity -->
+                    <button type="button" class="btn btn-dark js-offcanvas-trigger" data-offcanvas-trigger="off-canvas-right">add to cart</button>
+                    <a href="#" class="fav-btn"><span class="icon-heart icons"></span></a>
+                </div><!-- /.product-summary -->
+            </div><!-- /.col-md-8 -->
+        </div><!-- /.row -->
+    </div><!-- /.product-popup-1 -->
+
+
+    <!-- Search Box Popup-->
+    <div id="search-box-popup" class="search-box-popup mfp-with-anim mfp-hide">
+        <form action="#">
+            <input class="form-control" type="text" placeholder="Start typing...">
+        </form>
+    </div><!-- /Search Box Popup -->
+
+
+    <!-- Search Box Popup-->
+    <div id="user-box-popup" class="user-box-popup mfp-with-anim mfp-hide">
+        <div class="login-screen">            
+            <div class="user-box-popup-header text-center">
+                <span class="flaticon-user"></span>
+                <p class="text-left">Create an account to expedite future checkouts, track order history & receive emails, discounts, & special offers</p>
+            </div>
+            <form action="#">
+                <input type="text" class="form-control" placeholder="Username">
+                <input type="text" class="form-control" placeholder="Password">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <label class="custom-control-label" for="customCheck1">Remember me</label>
+                        </div>
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-6 text-right">
+                        <a href="#">Lost your password?</a>
+                    </div><!-- /.col-md-6 -->
+                </div><!-- /.row -->
+                <button type="button" class="btn btn-dark">login</button>
+            </form>        
+            <div class="spec"><span>Or</span></div>
+            <p class="create-acc">Create an account</p>
+        </div><!-- /.login-screen -->
+        <div class="create-account">
+            <div class="login-icon"> <span class="flaticon-login"></span><p class="des-res">Register</p></div>
+            <form action="#" >
+                <input type="text" class="form-control" placeholder="Username">
+                <input type="text" class="form-control" placeholder="Password">
+                <button type="button" class="btn btn-dark">Register</button>
+            </form>  
+            <div class="spec"><span>Or</span></div>
+            <p class="login-screen-back">Back to login</p>  
+        </div><!-- /.create-account -->
+    </div><!-- /Search Box Popup -->
+    
+    
+     <!-- Offcanvas Right-->
+    <aside class="js-offcanvas js-open" data-offcanvas-options='{"modifiers":"right,overlay"}' id="off-canvas-right" role="complementary">
+        <div class="c-offcanvas__inner o-box u-pos-relative">
+            <div class="cart-right-header">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="js-offcanvas-close border-right" data-button-options='{"modifiers":"blue,hard,close-right"}'>
+                            <img src="img/icon/close.svg" alt="">
+                        </div><!-- /.js-offcanvas-close --> 
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-6 text-center your-cart">
+                        <span>YOUR CART</span>
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-3 border-left your-cart-number">
+                        <span>0</span>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.cart-right-header -->
+            <div class="empty-cart-body">
+                <p>No products in the cart.</p>
+                <a href="#" class="btn btn-dark">Start shopping</a>
+                <a href="#" class="our-shiping-link">Our Shipping &amp; Return Policy</a>
+            </div>
+        </div><!-- /.c-offcanvas__inner -->        
+    </aside><!-- End of Offcanvas Right-->
+
+    
+    
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="vendor/jquery/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Magnific Popup -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+
+    <!-- offcanvas -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src='https://npmcdn.com/js-offcanvas/dist/_js/js-offcanvas.pkgd.min.js'></script>
+    <script src="vendor/offcanvas/offcanvas.js"></script>
+
+    <!-- Main CSS -->
+	<script src="js/main.js"></script>
+
+
+    <script>
+        // HideShow Create Account and Login 
+          $(".create-account").hide();
+          
+          $("p.create-acc").click(function(){
+              $(".create-account").show();
+              $(".login-screen").hide();
+          });
+
+           $("p.login-screen-back").click(function(){
+              $(".create-account").hide();
+              $(".login-screen").show();
+          });
+    </script>
+
+	
+	</body>
+</html>

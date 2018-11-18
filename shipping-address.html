@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>My Account</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    
+    <!-- FlatICON -->
+    <link rel='stylesheet' href="vendor/flaticon/flaticon.css" />
+    
+    <!-- Magnific Popup -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
+
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/css/bootstrap-select.min.css">
+
+    <!-- Main CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+  </head>
+
+  <body id="inline-popups"> 
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#"><img class="" src="img/logo.png" alt=""></a>
+        <ul class="list-inline top-right-list">
+            <li class="list-inline-item">
+                <a href="#search-box-popup" data-effect="mfp-zoom-out" class="light-box-popup">
+                    <span class="icon-magnifier icons"></span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#user-box-popup" data-effect="mfp-zoom-in" class="light-box-popup">
+                   <span class="flaticon-user"></span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <span class="mini-cart-icon js-offcanvas-trigger" data-offcanvas-trigger="off-canvas-right">
+                    <span class="icon-bag icons"></span>
+                    <span class="minicart-number">0</span>
+                </span>
+            </li>
+        </ul><!-- /.top-right-list -->
+      </div><!-- /.container -->
+    </nav><!-- /Navigation -->
+    
+    <div class="center-container">
+        <div class="home-center-header text-center">
+            <h1>My Account</h1>
+            <ul class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li>My Account</li>
+            </ul>
+        </div><!-- /.home-center-header -->
+        <ul class="page-links list-inline text-center">
+            <li class="list-inline-item"><a href="#">Shopping Cart</a></li>
+            <li class="list-inline-item active"><a href="#">my account</a></li>  
+            <li class="list-inline-item"><a href="#">logout</a></li>  
+        </ul>
+        <div class="my-account">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="my-account-left-content">
+                        <h2>My account</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="my-account.html">Dashboard</a></li>
+                            <li><a href="orders.html">Orders</a></li>
+                            <li><a href="request-selling.html">Request selling a book</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="account-details.html">Account details</a></li>
+                            <li class="active"><a href="address.html">Address</a></li>
+                            <li><a href="logout.html">Logout</a></li>
+                        </ul>
+                    </div><!-- /.my-account-left-content -->
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-9">
+                    <div class="shipping-address-details">
+                        <h2>Shipping address</h2>
+                    </div>  
+                    <form action="#" class="shipping-address-details-form">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                              <label>First name <span>*</span></label>
+                              <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                              <label>Last name <span>*</span></label>
+                              <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                              <label>Company name  <span>*</span></label>
+                              <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                              <label>Country    <span>*</span></label>
+                              <select class="selectpicker" data-live-search="true">
+                                <option data-tokens="AF">Afghanistan</option>
+                                <option data-tokens="AX">Åland Islands</option>
+                                <option data-tokens="AL">Albania</option>
+                                <option data-tokens="DZ">Algeria</option>
+                                <option data-tokens="AS">American Samoa</option>
+                                <option data-tokens="AD">Andorra</option>
+                                <option data-tokens="AO">Angola</option>
+                                <option data-tokens="AI">Anguilla</option>
+                                <option data-tokens="AQ">Antarctica</option>
+                                <option data-tokens="AG">Antigua and Barbuda</option>
+                                <option data-tokens="AR">Argentina</option>
+                                <option data-tokens="AM">Armenia</option>
+                                <option data-tokens="AW">Aruba</option>
+                                <option data-tokens="AU">Australia</option>
+                                <option data-tokens="AT">Austria</option>
+                                <option data-tokens="AZ">Azerbaijan</option>
+                                <option data-tokens="BS">Bahamas</option>
+                                <option data-tokens="BH">Bahrain</option>
+                                <option data-tokens="BD">Bangladesh</option>
+                                <option data-tokens="BB">Barbados</option>
+                                <option data-tokens="BY">Belarus</option>
+                                <option data-tokens="BE">Belgium</option>
+                                <option data-tokens="BZ">Belize</option>
+                                <option data-tokens="BJ">Benin</option>
+                                <option data-tokens="BM">Bermuda</option>
+                                <option data-tokens="BT">Bhutan</option>
+                                <option data-tokens="BO">Bolivia, Plurinational State of</option>
+                                <option data-tokens="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                <option data-tokens="BA">Bosnia and Herzegovina</option>
+                                <option data-tokens="BW">Botswana</option>
+                                <option data-tokens="BV">Bouvet Island</option>
+                                <option data-tokens="BR">Brazil</option>
+                                <option data-tokens="IO">British Indian Ocean Territory</option>
+                                <option data-tokens="BN">Brunei Darussalam</option>
+                                <option data-tokens="BG">Bulgaria</option>
+                                <option data-tokens="BF">Burkina Faso</option>
+                                <option data-tokens="BI">Burundi</option>
+                                <option data-tokens="KH">Cambodia</option>
+                                <option data-tokens="CM">Cameroon</option>
+                                <option data-tokens="CA">Canada</option>
+                                <option data-tokens="CV">Cape Verde</option>
+                                <option data-tokens="KY">Cayman Islands</option>
+                                <option data-tokens="CF">Central African Republic</option>
+                                <option data-tokens="TD">Chad</option>
+                                <option data-tokens="CL">Chile</option>
+                                <option data-tokens="CN">China</option>
+                                <option data-tokens="CX">Christmas Island</option>
+                                <option data-tokens="CC">Cocos (Keeling) Islands</option>
+                                <option data-tokens="CO">Colombia</option>
+                                <option data-tokens="KM">Comoros</option>
+                                <option data-tokens="CG">Congo</option>
+                                <option data-tokens="CD">Congo, the Democratic Republic of the</option>
+                                <option data-tokens="CK">Cook Islands</option>
+                                <option data-tokens="CR">Costa Rica</option>
+                                <option data-tokens="CI">Côte d'Ivoire</option>
+                                <option data-tokens="HR">Croatia</option>
+                                <option data-tokens="CU">Cuba</option>
+                                <option data-tokens="CW">Curaçao</option>
+                                <option data-tokens="CY">Cyprus</option>
+                                <option data-tokens="CZ">Czech Republic</option>
+                                <option data-tokens="DK">Denmark</option>
+                                <option data-tokens="DJ">Djibouti</option>
+                                <option data-tokens="DM">Dominica</option>
+                                <option data-tokens="DO">Dominican Republic</option>
+                                <option data-tokens="EC">Ecuador</option>
+                                <option data-tokens="EG">Egypt</option>
+                                <option data-tokens="SV">El Salvador</option>
+                                <option data-tokens="GQ">Equatorial Guinea</option>
+                                <option data-tokens="ER">Eritrea</option>
+                                <option data-tokens="EE">Estonia</option>
+                                <option data-tokens="ET">Ethiopia</option>
+                                <option data-tokens="FK">Falkland Islands (Malvinas)</option>
+                                <option data-tokens="FO">Faroe Islands</option>
+                                <option data-tokens="FJ">Fiji</option>
+                                <option data-tokens="FI">Finland</option>
+                                <option data-tokens="FR">France</option>
+                                <option data-tokens="GF">French Guiana</option>
+                                <option data-tokens="PF">French Polynesia</option>
+                                <option data-tokens="TF">French Southern Territories</option>
+                                <option data-tokens="GA">Gabon</option>
+                                <option data-tokens="GM">Gambia</option>
+                                <option data-tokens="GE">Georgia</option>
+                                <option data-tokens="DE">Germany</option>
+                                <option data-tokens="GH">Ghana</option>
+                                <option data-tokens="GI">Gibraltar</option>
+                                <option data-tokens="GR">Greece</option>
+                                <option data-tokens="GL">Greenland</option>
+                                <option data-tokens="GD">Grenada</option>
+                                <option data-tokens="GP">Guadeloupe</option>
+                                <option data-tokens="GU">Guam</option>
+                                <option data-tokens="GT">Guatemala</option>
+                                <option data-tokens="GG">Guernsey</option>
+                                <option data-tokens="GN">Guinea</option>
+                                <option data-tokens="GW">Guinea-Bissau</option>
+                                <option data-tokens="GY">Guyana</option>
+                                <option data-tokens="HT">Haiti</option>
+                                <option data-tokens="HM">Heard Island and McDonald Islands</option>
+                                <option data-tokens="VA">Holy See (Vatican City State)</option>
+                                <option data-tokens="HN">Honduras</option>
+                                <option data-tokens="HK">Hong Kong</option>
+                                <option data-tokens="HU">Hungary</option>
+                                <option data-tokens="IS">Iceland</option>
+                                <option data-tokens="IN">India</option>
+                                <option data-tokens="ID">Indonesia</option>
+                                <option data-tokens="IR">Iran, Islamic Republic of</option>
+                                <option data-tokens="IQ">Iraq</option>
+                                <option data-tokens="IE">Ireland</option>
+                                <option data-tokens="IM">Isle of Man</option>
+                                <option data-tokens="IL">Israel</option>
+                                <option data-tokens="IT">Italy</option>
+                                <option data-tokens="JM">Jamaica</option>
+                                <option data-tokens="JP">Japan</option>
+                                <option data-tokens="JE">Jersey</option>
+                                <option data-tokens="JO">Jordan</option>
+                                <option data-tokens="KZ">Kazakhstan</option>
+                                <option data-tokens="KE">Kenya</option>
+                                <option data-tokens="KI">Kiribati</option>
+                                <option data-tokens="KP">Korea, Democratic People's Republic of</option>
+                                <option data-tokens="KR">Korea, Republic of</option>
+                                <option data-tokens="KW">Kuwait</option>
+                                <option data-tokens="KG">Kyrgyzstan</option>
+                                <option data-tokens="LA">Lao People's Democratic Republic</option>
+                                <option data-tokens="LV">Latvia</option>
+                                <option data-tokens="LB">Lebanon</option>
+                                <option data-tokens="LS">Lesotho</option>
+                                <option data-tokens="LR">Liberia</option>
+                                <option data-tokens="LY">Libya</option>
+                                <option data-tokens="LI">Liechtenstein</option>
+                                <option data-tokens="LT">Lithuania</option>
+                                <option data-tokens="LU">Luxembourg</option>
+                                <option data-tokens="MO">Macao</option>
+                                <option data-tokens="MK">Macedonia, the former Yugoslav Republic of</option>
+                                <option data-tokens="MG">Madagascar</option>
+                                <option data-tokens="MW">Malawi</option>
+                                <option data-tokens="MY">Malaysia</option>
+                                <option data-tokens="MV">Maldives</option>
+                                <option data-tokens="ML">Mali</option>
+                                <option data-tokens="MT">Malta</option>
+                                <option data-tokens="MH">Marshall Islands</option>
+                                <option data-tokens="MQ">Martinique</option>
+                                <option data-tokens="MR">Mauritania</option>
+                                <option data-tokens="MU">Mauritius</option>
+                                <option data-tokens="YT">Mayotte</option>
+                                <option data-tokens="MX">Mexico</option>
+                                <option data-tokens="FM">Micronesia, Federated States of</option>
+                                <option data-tokens="MD">Moldova, Republic of</option>
+                                <option data-tokens="MC">Monaco</option>
+                                <option data-tokens="MN">Mongolia</option>
+                                <option data-tokens="ME">Montenegro</option>
+                                <option data-tokens="MS">Montserrat</option>
+                                <option data-tokens="MA">Morocco</option>
+                                <option data-tokens="MZ">Mozambique</option>
+                                <option data-tokens="MM">Myanmar</option>
+                                <option data-tokens="NA">Namibia</option>
+                                <option data-tokens="NR">Nauru</option>
+                                <option data-tokens="NP">Nepal</option>
+                                <option data-tokens="NL">Netherlands</option>
+                                <option data-tokens="NC">New Caledonia</option>
+                                <option data-tokens="NZ">New Zealand</option>
+                                <option data-tokens="NI">Nicaragua</option>
+                                <option data-tokens="NE">Niger</option>
+                                <option data-tokens="NG">Nigeria</option>
+                                <option data-tokens="NU">Niue</option>
+                                <option data-tokens="NF">Norfolk Island</option>
+                                <option data-tokens="MP">Northern Mariana Islands</option>
+                                <option data-tokens="NO">Norway</option>
+                                <option data-tokens="OM">Oman</option>
+                                <option data-tokens="PK">Pakistan</option>
+                                <option data-tokens="PW">Palau</option>
+                                <option data-tokens="PS">Palestinian Territory, Occupied</option>
+                                <option data-tokens="PA">Panama</option>
+                                <option data-tokens="PG">Papua New Guinea</option>
+                                <option data-tokens="PY">Paraguay</option>
+                                <option data-tokens="PE">Peru</option>
+                                <option data-tokens="PH">Philippines</option>
+                                <option data-tokens="PN">Pitcairn</option>
+                                <option data-tokens="PL">Poland</option>
+                                <option data-tokens="PT">Portugal</option>
+                                <option data-tokens="PR">Puerto Rico</option>
+                                <option data-tokens="QA">Qatar</option>
+                                <option data-tokens="RE">Réunion</option>
+                                <option data-tokens="RO">Romania</option>
+                                <option data-tokens="RU">Russian Federation</option>
+                                <option data-tokens="RW">Rwanda</option>
+                                <option data-tokens="BL">Saint Barthélemy</option>
+                                <option data-tokens="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                                <option data-tokens="KN">Saint Kitts and Nevis</option>
+                                <option data-tokens="LC">Saint Lucia</option>
+                                <option data-tokens="MF">Saint Martin (French part)</option>
+                                <option data-tokens="PM">Saint Pierre and Miquelon</option>
+                                <option data-tokens="VC">Saint Vincent and the Grenadines</option>
+                                <option data-tokens="WS">Samoa</option>
+                                <option data-tokens="SM">San Marino</option>
+                                <option data-tokens="ST">Sao Tome and Principe</option>
+                                <option data-tokens="SA">Saudi Arabia</option>
+                                <option data-tokens="SN">Senegal</option>
+                                <option data-tokens="RS">Serbia</option>
+                                <option data-tokens="SC">Seychelles</option>
+                                <option data-tokens="SL">Sierra Leone</option>
+                                <option data-tokens="SG">Singapore</option>
+                                <option data-tokens="SX">Sint Maarten (Dutch part)</option>
+                                <option data-tokens="SK">Slovakia</option>
+                                <option data-tokens="SI">Slovenia</option>
+                                <option data-tokens="SB">Solomon Islands</option>
+                                <option data-tokens="SO">Somalia</option>
+                                <option data-tokens="ZA">South Africa</option>
+                                <option data-tokens="GS">South Georgia and the South Sandwich Islands</option>
+                                <option data-tokens="SS">South Sudan</option>
+                                <option data-tokens="ES">Spain</option>
+                                <option data-tokens="LK">Sri Lanka</option>
+                                <option data-tokens="SD">Sudan</option>
+                                <option data-tokens="SR">Suriname</option>
+                                <option data-tokens="SJ">Svalbard and Jan Mayen</option>
+                                <option data-tokens="SZ">Swaziland</option>
+                                <option data-tokens="SE">Sweden</option>
+                                <option data-tokens="CH">Switzerland</option>
+                                <option data-tokens="SY">Syrian Arab Republic</option>
+                                <option data-tokens="TW">Taiwan, Province of China</option>
+                                <option data-tokens="TJ">Tajikistan</option>
+                                <option data-tokens="TZ">Tanzania, United Republic of</option>
+                                <option data-tokens="TH">Thailand</option>
+                                <option data-tokens="TL">Timor-Leste</option>
+                                <option data-tokens="TG">Togo</option>
+                                <option data-tokens="TK">Tokelau</option>
+                                <option data-tokens="TO">Tonga</option>
+                                <option data-tokens="TT">Trinidad and Tobago</option>
+                                <option data-tokens="TN">Tunisia</option>
+                                <option data-tokens="TR">Turkey</option>
+                                <option data-tokens="TM">Turkmenistan</option>
+                                <option data-tokens="TC">Turks and Caicos Islands</option>
+                                <option data-tokens="TV">Tuvalu</option>
+                                <option data-tokens="UG">Uganda</option>
+                                <option data-tokens="UA">Ukraine</option>
+                                <option data-tokens="AE">United Arab Emirates</option>
+                                <option data-tokens="GB">United Kingdom</option>
+                                <option data-tokens="US" selected="selected">United States</option>
+                                <option data-tokens="UM">United States Minor Outlying Islands</option>
+                                <option data-tokens="UY">Uruguay</option>
+                                <option data-tokens="UZ">Uzbekistan</option>
+                                <option data-tokens="VU">Vanuatu</option>
+                                <option data-tokens="VE">Venezuela, Bolivarian Republic of</option>
+                                <option data-tokens="VN">Viet Nam</option>
+                                <option data-tokens="VG">Virgin Islands, British</option>
+                                <option data-tokens="VI">Virgin Islands, U.S.</option>
+                                <option data-tokens="WF">Wallis and Futuna</option>
+                                <option data-tokens="EH">Western Sahara</option>
+                                <option data-tokens="YE">Yemen</option>
+                                <option data-tokens="ZM">Zambia</option>
+                                <option data-tokens="ZW">Zimbabwe</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                              <label>Street address <span>*</span></label>
+                              <input type="email" class="form-control" placeholder="House number and street name">
+                              <br>
+                              <input type="email" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                              <label>Town / City   <span>*</span></label>
+                              <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                              <label>State   <span>*</span></label>
+                              <select class="selectpicker" data-live-search="true">
+                                <option value="AL">Alabama</option>
+                                  <option data-tokens="AK">Alaska</option>
+                                  <option data-tokens="AZ">Arizona</option>
+                                  <option data-tokens="AR">Arkansas</option>
+                                  <option data-tokens="CA">California</option>
+                                  <option data-tokens="CO">Colorado</option>
+                                  <option data-tokens="CT">Connecticut</option>
+                                  <option data-tokens="DE">Delaware</option>
+                                  <option data-tokens="DC">District Of Columbia</option>
+                                  <option data-tokens="FL">Florida</option>
+                                  <option data-tokens="GA">Georgia</option>
+                                  <option data-tokens="HI">Hawaii</option>
+                                  <option data-tokens="ID">Idaho</option>
+                                  <option data-tokens="IL">Illinois</option>
+                                  <option data-tokens="IN">Indiana</option>
+                                  <option data-tokens="IA">Iowa</option>
+                                  <option data-tokens="KS">Kansas</option>
+                                  <option data-tokens="KY">Kentucky</option>
+                                  <option data-tokens="LA">Louisiana</option>
+                                  <option data-tokens="ME">Maine</option>
+                                  <option data-tokens="MD">Maryland</option>
+                                  <option data-tokens="MA">Massachusetts</option>
+                                  <option data-tokens="MI">Michigan</option>
+                                  <option data-tokens="MN">Minnesota</option>
+                                  <option data-tokens="MS">Mississippi</option>
+                                  <option data-tokens="MO">Missouri</option>
+                                  <option data-tokens="MT">Montana</option>
+                                  <option data-tokens="NE">Nebraska</option>
+                                  <option data-tokens="NV">Nevada</option>
+                                  <option data-tokens="NH">New Hampshire</option>
+                                  <option data-tokens="NJ">New Jersey</option>
+                                  <option data-tokens="NM">New Mexico</option>
+                                  <option data-tokens="NY">New York</option>
+                                  <option data-tokens="NC">North Carolina</option>
+                                  <option data-tokens="ND">North Dakota</option>
+                                  <option data-tokens="OH">Ohio</option>
+                                  <option data-tokens="OK">Oklahoma</option>
+                                  <option data-tokens="OR">Oregon</option>
+                                  <option data-tokens="PA">Pennsylvania</option>
+                                  <option data-tokens="RI">Rhode Island</option>
+                                  <option data-tokens="SC">South Carolina</option>
+                                  <option data-tokens="SD">South Dakota</option>
+                                  <option data-tokens="TN">Tennessee</option>
+                                  <option data-tokens="TX">Texas</option>
+                                  <option data-tokens="UT">Utah</option>
+                                  <option data-tokens="VT">Vermont</option>
+                                  <option data-tokens="VA">Virginia</option>
+                                  <option data-tokens="WA">Washington</option>
+                                  <option data-tokens="WV">West Virginia</option>
+                                  <option data-tokens="WI">Wisconsin</option>
+                                  <option data-tokens="WY">Wyoming</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                              <label>State <span>*</span></label>
+                              <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                              <label>ZIP <span>*</span></label>
+                              <input type="text" class="form-control">
+                            </div>
+                        </div>                        
+                        <button type="submit" class="btn btn-dark">Save address</button>
+                    </form>
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.my-account -->
+    </div><!-- /.center-container -->
+
+    <footer>
+        <div class="center-container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-widget-1">
+                        <img src="img/logo.png" alt="">
+                        <p class="copyright">© CourseTrader, Inc. 2018</p>
+                        <div class="socials style2">
+                          <a class="social-item" href="https://facebook.com" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                          <a class="social-item" href="https://twitter.com" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                          <a class="social-item" href="https://pinterest.com" target="_blank">
+                            <i class="fa fa-pinterest-p"></i>
+                          </a>
+                          <a class="social-item" href="https://nomos.famithemes.com/feed/" target="_blank">
+                            <i class="fa fa-rss"></i>
+                          </a>
+                        </div>
+                    </div><!-- footer-widget-1 -->
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h2 class="widgettitle">
+                            HELP
+                        </h2>
+                    </div>
+                </div><!-- /.col-lg-2 -->
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h2 class="widgettitle">
+                            SHOP
+                        </h2>
+                        <ul class="list-unstyled footer-shop-menu">
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">Order Tracking</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                        </ul>
+                    </div><!-- /.footer-widget -->
+                </div><!-- /.col-lg-2 -->
+                <div class="col-lg-4">
+                    <div class="footer-widget newsletter-widget">
+                        <h2 class="widgettitle">
+                            NEWSLETTER
+                        </h2>
+                        <div class="newsletter-subtitle">Sign up for our newsletter to receive special offers, news &amp; great events.</div>
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Email address here">
+                          <div class="input-group-append">
+                            <button  class="btn btn-dark" type="button" id="button-addon2"><img src="img/icon/mail.png" alt=""></button>
+                          </div>
+                        </div><!-- /.input-group -->
+                        <img class="img-fluid mt-4" src="img/pay-method.jpg" alt="">
+                    </div><!-- /.footer-widget -->
+                </div><!-- /.col-lg-4 -->
+            </div> <!-- /.row -->       
+        </div><!-- /.center-container -->
+    </footer><!-- /.footer -->
+
+
+
+    <!-- Product Popup -->
+    <div id="product-popup-1" class="white-popup mfp-with-anim mfp-hide">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-fluid" src="img/product/product-big.jpg" alt="">
+            </div><!-- /.col-md-4 -->
+            <div class="col-md-8">
+                <div class="product-summary">
+                    <h1>Portable Bluetooth Speaker</h1>
+                    <p class="price">$55.00 – $56.00</p>
+                    <h4>Intro</h4>
+                    <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    <div class="quantity">
+                        Quantity        
+                        <div class="control">
+                            <a class="btn-number qtyminus quantity-minus" href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                            <input type="text" data-step="1" data-min="1" data-max="" name="quantity" value="1" title="Qty" class="input-qty qty" size="4">
+                            <a class="btn-number qtyplus quantity-plus" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div><!-- /.quantity -->
+                    <button type="button" class="btn btn-dark js-offcanvas-trigger" data-offcanvas-trigger="off-canvas-right">add to cart</button>
+                    <a href="#" class="fav-btn"><span class="icon-heart icons"></span></a>
+                </div><!-- /.product-summary -->
+            </div><!-- /.col-md-8 -->
+        </div><!-- /.row -->
+    </div><!-- /.product-popup-1 -->
+
+
+    <!-- Search Box Popup-->
+    <div id="search-box-popup" class="search-box-popup mfp-with-anim mfp-hide">
+        <form action="#">
+            <input class="form-control" type="text" placeholder="Start typing...">
+        </form>
+    </div><!-- /Search Box Popup -->
+
+
+    <!-- Search Box Popup-->
+    <div id="user-box-popup" class="user-box-popup mfp-with-anim mfp-hide">
+        <div class="login-screen">            
+            <div class="user-box-popup-header text-center">
+                <span class="flaticon-user"></span>
+                <p class="text-left">Create an account to expedite future checkouts, track order history & receive emails, discounts, & special offers</p>
+            </div>
+            <form action="#">
+                <input type="text" class="form-control" placeholder="Username">
+                <input type="text" class="form-control" placeholder="Password">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <label class="custom-control-label" for="customCheck1">Remember me</label>
+                        </div>
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-6 text-right">
+                        <a href="#">Lost your password?</a>
+                    </div><!-- /.col-md-6 -->
+                </div><!-- /.row -->
+                <button type="button" class="btn btn-dark">login</button>
+            </form>        
+            <div class="spec"><span>Or</span></div>
+            <p class="create-acc">Create an account</p>
+        </div><!-- /.login-screen -->
+        <div class="create-account">
+            <div class="login-icon"> <span class="flaticon-login"></span><p class="des-res">Register</p></div>
+            <form action="#" >
+                <input type="text" class="form-control" placeholder="Username">
+                <input type="text" class="form-control" placeholder="Password">
+                <button type="button" class="btn btn-dark">Register</button>
+            </form>  
+            <div class="spec"><span>Or</span></div>
+            <p class="login-screen-back">Back to login</p>  
+        </div><!-- /.create-account -->
+    </div><!-- /Search Box Popup -->
+    
+    
+     <!-- Offcanvas Right-->
+    <aside class="js-offcanvas js-open" data-offcanvas-options='{"modifiers":"right,overlay"}' id="off-canvas-right" role="complementary">
+        <div class="c-offcanvas__inner o-box u-pos-relative">
+            <div class="cart-right-header">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="js-offcanvas-close border-right" data-button-options='{"modifiers":"blue,hard,close-right"}'>
+                            <img src="img/icon/close.svg" alt="">
+                        </div><!-- /.js-offcanvas-close --> 
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-6 text-center your-cart">
+                        <span>YOUR CART</span>
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-3 border-left your-cart-number">
+                        <span>0</span>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.cart-right-header -->
+            <div class="empty-cart-body">
+                <p>No products in the cart.</p>
+                <a href="#" class="btn btn-dark">Start shopping</a>
+                <a href="#" class="our-shiping-link">Our Shipping &amp; Return Policy</a>
+            </div>
+        </div><!-- /.c-offcanvas__inner -->        
+    </aside><!-- End of Offcanvas Right-->
+
+    
+    
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="vendor/jquery/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Magnific Popup -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+
+    <!-- offcanvas -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src='https://npmcdn.com/js-offcanvas/dist/_js/js-offcanvas.pkgd.min.js'></script>
+    <script src="vendor/offcanvas/offcanvas.js"></script>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/js/bootstrap-select.min.js"></script>
+
+
+    <!-- Main CSS -->
+	  <script src="js/main.js"></script>
+
+
+    <script>
+        // HideShow Create Account and Login 
+          $(".create-account").hide();
+          
+          $("p.create-acc").click(function(){
+              $(".create-account").show();
+              $(".login-screen").hide();
+          });
+
+           $("p.login-screen-back").click(function(){
+              $(".create-account").hide();
+              $(".login-screen").show();
+          });
+    </script>
+
+	
+	</body>
+</html>
