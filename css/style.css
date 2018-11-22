@@ -1975,7 +1975,6 @@ footer .newsletter-widget .form-control:-moz-placeholder {
     display: none;
 }
 
-#product0,
 #product1,
 #product2,
 #product3,
@@ -1989,7 +1988,8 @@ footer .newsletter-widget .form-control:-moz-placeholder {
 #product11,
 #product12,
 #product13,
-#product14{
+#product14,
+#product15{
     display: none;
 }
 
