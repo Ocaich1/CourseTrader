@@ -22,91 +22,91 @@ var html,
 
 //create functions
 function addToCart() {
-    $('#product0').show();
-    //hide empty-cart-body
-    emptyCartBox.style.display = "none";
-
-}
-function addToCart1() {
     $('#product1').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
-function addToCart2() {
+function addToCart1() {
     $('#product2').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
-function addToCart3() {
+function addToCart2() {
     $('#product3').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
-function addToCart4() {
+function addToCart3() {
     $('#product4').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
-function addToCart5() {
+function addToCart4() {
     $('#product5').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
-function addToCart6() {
+function addToCart5() {
     $('#product6').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
-function addToCart7() {
+function addToCart6() {
     $('#product7').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
-function addToCart8() {
+function addToCart7() {
     $('#product8').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
-function addToCart9() {
+function addToCart8() {
     $('#product9').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
-function addToCart10() {
+function addToCart9() {
     $('#product10').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
-function addToCart11() {
+function addToCart10() {
     $('#product11').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
-function addToCart12() {
+function addToCart11() {
     $('#product12').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
-function addToCart13() {
+function addToCart12() {
     $('#product13').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
 }
+function addToCart13() {
+    $('#product14').show();
+    //hide empty-cart-body
+    emptyCartBox.style.display = "none";
+
+}
 function addToCart14() {
-    $('#product114').show();
+    $('#product15').show();
     //hide empty-cart-body
     emptyCartBox.style.display = "none";
 
@@ -129,4 +129,3 @@ addCartButton11.addEventListener('click', addToCart11, false);
 addCartButton12.addEventListener('click', addToCart12, false);
 addCartButton13.addEventListener('click', addToCart13, false);
 addCartButton14.addEventListener('click', addToCart14, false);
-
