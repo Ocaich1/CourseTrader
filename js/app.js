@@ -3,78 +3,72 @@
 var ShoppingCart = (function ($) {
     "use strict";
 
-    //create variables
+    //create variables initialize them with element. Cahe elements.
     var badgeQuantity = document.getElementById("my-cart-badge"),
         emptyCartBox = document.getElementById('empty-cart-body'),
-        emptyCartBoxFull = true,
-        emptyCartButton = document.getElementById('empty-cart-button'),
+        emptyCartBoxFull = false,
         builtCart = document.getElementById("products-in-cart"),
         cartQuantity = document.getElementById("offcanvas-cart-number"),
+        badgeQuantity = document.getElementById('my-cart-badge'),
+        emptyButton = document.getElementById("empty-cart-button"),
 
-        // Fake JSON data array here should be API call
+        // Fake JSON data array here should be an API call. This contains the products information stored in an array JSON format. need more updated info plugged in for details. 
         products = [
             {
                 id: 1,
-                name: "book1",
-                description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/product/small/1.jpg",
+                name: "Managerial Accounting",
+                description: "Introduction to managerial accounting",
+                imageUrl: "../img/book/ACC 2203.png",
                 price: 25,
-                productNum: "product1",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/1.jpg" alt="book1 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product1"
     },
             {
                 id: 2,
                 name: "book2",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/product/small/2.jpg",
+                imageUrl: "../img/book/CIS 4800.png",
                 price: 25,
-                productNum: "product2",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/2.jpg" alt="book2 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product2"
     },
             {
                 id: 3,
                 name: "book3",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/product/small/3.jpg",
+                imageUrl: "../img/book/ECO 1001.png",
                 price: 50,
-                productNum: "product3",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/3.jpg" alt="book3 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product3"
     },
             {
                 id: 4,
                 name: "book4",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/product/small/4.jpg",
+                imageUrl: "../img/book/ENG 2800.png",
                 price: 50,
-                productNum: "product4",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/4.jpg" alt="book4 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$50.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product4"
     },
             {
                 id: 5,
                 name: "book5",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/product/small/5.jpg",
+                imageUrl: "../img/MTH 2003.png",
                 price: 25,
-                productNum: "product5",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/5.jpg" alt="book5 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product5"
     },
             {
                 id: 6,
                 name: "book6",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/product/small/6.jpg",
+                imageUrl: "../img/book/POL 1101.png",
                 price: 50,
-                productNum: "product6",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/6.jpg" alt="book6 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product6"
     },
             {
                 id: 7,
                 name: "book7",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/product/small/7.jpg",
+                imageUrl: "../img/product/book/STA 2000.png",
                 price: 50,
-                productNum: "product7",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/7.jpg" alt="book7 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product7"
     },
             {
                 id: 8,
@@ -82,8 +76,7 @@ var ShoppingCart = (function ($) {
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
                 imageUrl: "../img/product/small/8.jpg",
                 price: 50,
-                productNum: "product8",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/8.jpg" alt="book8 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product8"
     },
             {
                 id: 9,
@@ -91,8 +84,7 @@ var ShoppingCart = (function ($) {
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
                 imageUrl: "../img/product/small/9.jpg",
                 price: 50,
-                productNum: "product9",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/9.jpg" alt="book9 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product9"
     },
             {
                 id: 10,
@@ -100,8 +92,7 @@ var ShoppingCart = (function ($) {
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
                 imageUrl: "../img/product/small/10.jpg",
                 price: 50,
-                productNum: "product10",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/10.jpg" alt="book10 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product10"
     },
             {
                 id: 11,
@@ -109,8 +100,7 @@ var ShoppingCart = (function ($) {
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
                 imageUrl: "../img/product/small/11.jpg",
                 price: 50,
-                productNum: "product11",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/11.jpg" alt="book11 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product11"
     },
             {
                 id: 12,
@@ -118,8 +108,7 @@ var ShoppingCart = (function ($) {
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
                 imageUrl: "../img/product/small/12.jpg",
                 price: 50,
-                productNum: "product12",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/12.jpg" alt="book12 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product12"
     },
             {
                 id: 13,
@@ -127,8 +116,7 @@ var ShoppingCart = (function ($) {
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
                 imageUrl: "../img/product/small/13.jpg",
                 price: 50,
-                productNum: "product13",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/13.jpg" alt="book1 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product13"
     },
             {
                 id: 14,
@@ -136,8 +124,7 @@ var ShoppingCart = (function ($) {
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
                 imageUrl: "../img/product/small/14.jpg",
                 price: 50,
-                productNum: "product14",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/14.jpg" alt="book14 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product14"
     },
             {
                 id: 15,
@@ -145,75 +132,75 @@ var ShoppingCart = (function ($) {
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
                 imageUrl: "../img/product/small/15.jpg",
                 price: 50,
-                productNum: "product15",
-                productCode: '<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="img/product/small/15.jpg" alt="book15 description"></div><!-- /.col-md-4 --><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$25.00</strong></p></div><div class="col-md-4"><p class="qty">QTY: 1</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->'
+                productNum: "product15"
     }
   ],
+        //array that hols the products once they are added to the cart. Will also be
         productsInCart = [];
-
     //create functions
-    // Pretty much self explanatory function. NOTE: Here I have used template strings (ES6 Fea
+
+    /*I have used template strings (ES6 Feature) to build the html. 
+    I have used an onclick event on this button to close it out but 
+    i still cannot delete the instance from the div it leaves behind 
+    something and disrupts the onclick process. possibly better to 
+    turn into alert but same risidual problem. 
+    I would prefer to put on click events and use a remove mothod and update*/
+
+    //Function that creates a new product img in the sidebar of the html when add to acrt is pushed.
     var generateProduct = function (id) {
         productsInCart.forEach(function (item) {
-            var al = item;
+            var al = item.product;
             var productEl = document.createElement("div");
             productEl.className = "cart-product-list";
-            productEl.innerHTML = `<div class="row no-gutters"><div class"col-med-3"><img class="img-fluid" src="${item.imageUrl}" alt="${item.name}"></div><div class="col-md-9"><i class="fa fa-times close-item" aria-hidden="true"></i><h2>${item.name}</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>${item.price}</strong></p></div><div class="col-md-4"><p class="qty">Qty: ${item.price} $</p></div></div></div></div>`;
-
+            productEl.innerHTML = `<div class="row no-gutters"><div class="col-md-3"><img class="img-fluid" src="${item.product.imageUrl}" alt="${item.product.name}"></div><!-- /.col-md-4 --><div class="col-md-9"><i onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;" class="fa fa-times close-item" aria-hidden="true"></i><h2>Portable Bluetooth Speaker</h2><div class="row no-gutters cpl-footer"><div class="col-md-8"><p class="pricing"><strong>$${item.product.price}</strong></p></div><div class="col-md-4"><p class="qty">QTY:${item.product.quantity}</p></div></div></div><!-- /.col-md-8 --></div><!-- /.row -->`;
             builtCart.appendChild(productEl);
         });
     }
 
-    //add event listeners to addToCart buttons
+    //function that adds event listeners to buttons
     function addListeners() {
-        /*productsEl.addEventListener("click", function (event) {
-            var el = event.target;
-            if (el.classList.contains("add-to-cart")) {
-                var elId = el.dataset.id;
-                addToCart(elId);
-            }
-        });*/
-
-        var els = document.getElementsByClassName('add-to-cart');
-
-        for (var i = 0; i <= els.length; i++) {
+        //adds listeners to add to cart buttons. sometimes button function is disrupted by offcanvas.js possibly
+        var els = document.getElementsByClassName("add-to-cart");
+        for (var i = 0; i < els.length; i++) {
             els[i].onclick = function (event) {
                 var el = event.target;
                 var elId = el.dataset.id;
                 addToCart(elId);
-                console.log(elId);
             };
         }
 
-        emptyCartButton.addEventListener('click', emptyOutCart, false);
-
+        //function that changes states and clears contents of cart. Currently when buttons are pushed they will create one item in cart. although it is not reflected the item amount goes up in the products array. Just need to find a way to accurately remove item and be able to remove it from array as well.
+        var exs = emptyButton;
+        exs.onclick = function () {
+            emptyCartBox.style.display = "block";
+            builtCart.innerHTML = "";
+            productsInCart = [];
+            updateQuantity();
+        };
     }
 
     // Adds new items or updates existing one in productsInCart array
     var addToCart = function (id) {
-        var obj = products[id];
+        var obj = products[[id] - 1];
         if (productsInCart.length === 0 || productFound(obj.id) === undefined) {
             productsInCart.push({
                 product: obj,
                 quantity: 1,
+                id: obj.id
             });
-            emptyCartBoxFull = false;
+            emptyCartBoxFull = true;
             emptyCartBox.style.display = "none";
-            generateProduct();
+            generateProduct(id);
         } else {
             productsInCart.forEach(function (item) {
-
                 item.quantity++;
-                console.log('hello');
                 updateQuantity();
-                console.log(productsInCart);
-
             });
         }
         updateQuantity();
     }
 
-    // This function checks if project is already in productsInCart array
+    // This function checks if project is already in productsInCart array through its id.
     function productFound(productId) {
         'use strict';
         return productsInCart.find(function (item) {
@@ -222,18 +209,9 @@ var ShoppingCart = (function ($) {
 
     }
 
-
-    //function to empty out cart
-    function emptyOutCart() {
-        builtCart.innerHTML = "";
-        productsInCart = [];
-        updateQuantity();
-    }
-
-    //function that updates quantity
+    //function that updates quantity. also want it to update other quantities
     function updateQuantity() {
         cartQuantity.innerHTML = productsInCart.length;
-        badgeQuantity.innerHTML = productsInCart.length;
     }
 
 
@@ -248,7 +226,7 @@ var ShoppingCart = (function ($) {
         init: init
     };
 
-    // I have included jQuery although I haven't used it
+    // I have included jQuery although I haven't used much of it
 })(jQuery);
 
 ShoppingCart.init();
