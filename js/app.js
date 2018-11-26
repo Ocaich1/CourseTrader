@@ -1,5 +1,6 @@
 /*jslint browser, es6, single, for, devel, this */
 
+
 var ShoppingCart = (function ($) {
     "use strict";
 
