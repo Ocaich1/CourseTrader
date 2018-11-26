@@ -1,6 +1,5 @@
 /*jslint browser, es6, single, for, devel, this */
 
-
 var ShoppingCart = (function ($) {
     "use strict";
 
@@ -19,7 +18,7 @@ var ShoppingCart = (function ($) {
                 id: 1,
                 name: "Managerial Accounting",
                 description: "Introduction to managerial accounting",
-                imageUrl: "../img/book/ACC 2203.png",
+                imageUrl: "../img/book/ACC2203.png",
                 price: 25,
                 productNum: "product1"
     },
@@ -27,7 +26,7 @@ var ShoppingCart = (function ($) {
                 id: 2,
                 name: "book2",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/book/CIS 4800.png",
+                imageUrl: "../img/book/CIS4800.png",
                 price: 25,
                 productNum: "product2"
     },
@@ -35,7 +34,7 @@ var ShoppingCart = (function ($) {
                 id: 3,
                 name: "book3",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/book/ECO 1001.png",
+                imageUrl: "../img/book/ECO1001.png",
                 price: 50,
                 productNum: "product3"
     },
@@ -43,7 +42,7 @@ var ShoppingCart = (function ($) {
                 id: 4,
                 name: "book4",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/book/ENG 2800.png",
+                imageUrl: "../img/book/ENG2800.png",
                 price: 50,
                 productNum: "product4"
     },
@@ -51,7 +50,7 @@ var ShoppingCart = (function ($) {
                 id: 5,
                 name: "book5",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/MTH 2003.png",
+                imageUrl: "../img/MTH2003.png",
                 price: 25,
                 productNum: "product5"
     },
@@ -59,7 +58,7 @@ var ShoppingCart = (function ($) {
                 id: 6,
                 name: "book6",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/book/POL 1101.png",
+                imageUrl: "../img/book/POL1101.png",
                 price: 50,
                 productNum: "product6"
     },
@@ -67,7 +66,7 @@ var ShoppingCart = (function ($) {
                 id: 7,
                 name: "book7",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/product/book/STA 2000.png",
+                imageUrl: "../img/product/book/STA2000.png",
                 price: 50,
                 productNum: "product7"
     },
