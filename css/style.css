@@ -1975,22 +1975,9 @@ footer .newsletter-widget .form-control:-moz-placeholder {
     display: none;
 }
 
-#product1,
-#product2,
-#product3,
-#product4,
-#product5,
-#product6,
-#product7,
-#product8,
-#product9,
-#product10,
-#product11,
-#product12,
-#product13,
-#product14,
-#product15{
-    display: none;
+.products-in-cart {
+    max-height: 80%;
+    overflow-x: scroll;
 }
 
 /* Responsive Media Queries  */
