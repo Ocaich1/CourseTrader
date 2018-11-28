@@ -66,7 +66,7 @@ var ShoppingCart = (function ($) {
                 id: 7,
                 name: "book7",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-                imageUrl: "../img/product/book/STA2000.png",
+                imageUrl: "../img/product/book/STA 2000.png",
                 price: 50,
                 productNum: "product7"
     },
