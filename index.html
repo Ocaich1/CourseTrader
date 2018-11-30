@@ -695,36 +695,37 @@
 
 
     <!-- Search Box Popup-->
-     <div id="user-box-popup" class="user-box-popup mfp-with-anim mfp-hide">
-         <div class="login-screen">
-             <div class="user-box-popup-header text-center">
+    <div id="user-box-popup" class="user-box-popup mfp-with-anim mfp-hide">
+        <div class="login-screen">
+            <div class="user-box-popup-header text-center">
                 <span class="flaticon-user"></span>
                 <p class="text-left">Create an account to expedite future checkouts, track order history & receive emails, discounts, & special offers</p>
             </div>
             <form action="#">
                 <input type="text" class="form-control" placeholder="Username">
                 <input type="text" class="form-control" placeholder="Password">
-            <form action="login.php" method="POST">
-                <input type="text" class="form-control" placeholder="Username" name="username" required>
-                <input type="password" class="form-control" placeholder="Password" name="password" required>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="custom-control custom-checkbox">
-                             <input type="checkbox" class="custom-control-input" id="customCheck1">
-                             <label class="custom-control-label" for="customCheck1">Remember me</label>
-                         </div>
-                     </div><!-- /.col-md-6 -->
-                     <div class="col-md-6 text-right">
-                        <a href="#">Lost your password?</a>
-                    </div><!-- /.col-md-6 -->
-                </div><!-- /.row -->
-                <button type="button" class="btn btn-dark">login</button>
-                <button type="submit" class="btn btn-dark">login</button>
+                <form action="login.php" method="POST">
+                    <input type="text" class="form-control" placeholder="Username" name="username" required>
+                    <input type="password" class="form-control" placeholder="Password" name="password" required>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Remember me</label>
+                            </div>
+                        </div><!-- /.col-md-6 -->
+                        <div class="col-md-6 text-right">
+                            <a href="#">Lost your password?</a>
+                        </div><!-- /.col-md-6 -->
+                    </div><!-- /.row -->
+                    <button type="button" class="btn btn-dark">login</button>
+                    <button type="submit" class="btn btn-dark">login</button>
+                </form>
+                <div class="spec"><span>Or</span></div>
+                <p class="create-acc">Create an account</p>
             </form>
-            <div class="spec"><span>Or</span></div>
-            <p class="create-acc">Create an account</p>
-         </div><!-- /.login-screen -->
-         <div class="create-account">
+        </div><!-- /.login-screen -->
+        <div class="create-account">
             <div class="login-icon"> <span class="flaticon-login"></span>
                 <p class="des-res">Register</p>
             </div>
@@ -732,16 +733,17 @@
                 <input type="text" class="form-control" placeholder="Username">
                 <input type="text" class="form-control" placeholder="Password">
                 <button type="button" class="btn btn-dark">Register</button>
-            <form action="insert.php" method="POST">
-                <input type="text" class="form-control" placeholder="Username" name="username" required>
-                <input type="password" class="form-control" placeholder="Password" name="password" required>
-                <button type="submit" class="btn btn-dark">Register</button>
+                <form action="insert.php" method="POST">
+                    <input type="text" class="form-control" placeholder="Username" name="username" required>
+                    <input type="password" class="form-control" placeholder="Password" name="password" required>
+                    <button type="submit" class="btn btn-dark">Register</button>
+                </form>
+                <div class="spec"><span>Or</span></div>
+                <p class="login-screen-back">Back to login</p>
             </form>
-            <div class="spec"><span>Or</span></div>
-            <p class="login-screen-back">Back to login</p>
-         </div><!-- /.create-account -->
-     </div><!-- /Search Box Popup -->
-    
+        </div><!-- /.create-account -->
+    </div><!-- /Search Box Popup -->
+
     <!-- Offcanvas Right-->
     <aside class="js-offcanvas js-open" data-offcanvas-options='{"modifiers":"right,overlay"}' id="off-canvas-right" role="complementary">
         <div class="c-offcanvas__inner o-box u-pos-relative">
