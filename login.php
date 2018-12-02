@@ -16,27 +16,31 @@ if (!empty($username) || !empty($password)){
         die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
     } else {
         $SELECT = "SELECT username From register Where username = ? Limit 1"; 
-        $INSERT = "INSERT Into register (username, password) values (?, ?)";
+        $SELECT = "SELECT password From register Where password = ? Limit 1"; 
+        //$INSERT = "INSERT Into register (username, password) values (?, ?)";
         
         //prepare statement
         $stmt = $conn-> prepare($SELECT);
         $stmt->bind_param("s", $username);
+        $stmt->bind_param("s", $password);
         $stmt->execute();
         $stmt->bind_result($username);
+        $stmt->bind_result($password);
         $stmt->store_result();
         $rnum = $stmt->num_rows;
         
         if ($rnum == 0){
             $stmt->close();
             
-            $stmt = $conn->prepare($INSERT);
-            $stmt->bind_param("ss", $username, $password);
+            $stmt = $conn->prepare($SELECT);
+            $stmt->bind_param("s", $username);
+            $stmt->bind_param("s", $password);
             $stmt->execute();
-            echo "New record inserted successfully";
+            echo "Invalid username and/or password";
         } else{
-            echo "Someone already registered using this username";
+            header( 'Location: http://localhost/my-account.html');
         }
-        $stmt->close();
+        //$stmt->close();
         $conn->close();
     }
     } else {
