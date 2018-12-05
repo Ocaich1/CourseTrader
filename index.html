@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title></title>
+    <title>Coursetrader App</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -701,30 +701,31 @@
                 <span class="flaticon-user"></span>
                 <p class="text-left">Create an account to expedite future checkouts, track order history & receive emails, discounts, & special offers</p>
             </div>
-                <form action="login.php" method="POST">
-                    <input type="text" class="form-control" placeholder="Username" name="username" required>
-                    <input type="password" class="form-control" placeholder="Password" name="password" required>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Remember me</label>
-                            </div>
-                        </div><!-- /.col-md-6 -->
-                        <div class="col-md-6 text-right">
-                            <a href="#">Lost your password?</a>
-                        </div><!-- /.col-md-6 -->
-                    </div><!-- /.row -->
-                    <button type="submit" class="btn btn-dark" href="my-account.html">login</button>
-                </form>
-                <div class="spec"><span>Or</span></div>
-                <p class="create-acc">Create an account</p>
+            <form action="login.php" method="POST">
+                <input type="text" class="form-control" placeholder="Username" name="username" required>
+                <input type="password" class="form-control" placeholder="Password" name="password" required>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Remember me</label>
+                        </div>
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-6 text-right">
+                        <a href="#">Lost your password?</a>
+                    </div><!-- /.col-md-6 -->
+                </div><!-- /.row -->
+                <button type="submit" class="btn btn-dark" href="my-account.html">login</button>
             </form>
+            <div class="spec"><span>Or</span></div>
+            <p class="create-acc">Create an account</p>
         </div><!-- /.login-screen -->
+
         <div class="create-account">
-            <div class="login-icon"> <span class="flaticon-login"></span>
-                <p class="des-res">Register</p>
-            </div>
+            <form>
+                <div class="login-icon"> <span class="flaticon-login"></span>
+                    <p class="des-res">Register</p>
+                </div>
                 <form action="insert.php" method="POST">
                     <input type="text" class="form-control" placeholder="Username" name="username" required>
                     <input type="password" class="form-control" placeholder="Password" name="password" required>
@@ -758,7 +759,7 @@
             <!-- div that gets populated with cart items -->
             <div class="products-in-cart" id="products-in-cart"></div>
 
-            <button class="cart-checkout" id="cart-checkout"><a href="checkout.html">Checkout - <span class="total-price" id="total-price">$0</span></a></button>
+            <button><a href="checkout.html" id="cart-checkout">Checkout</a></button>
             <button id="empty-cart-button">Empty cart</button>
             <div class="empty-cart-body" id="empty-cart-body">
                 <p>No products in the cart.</p>
