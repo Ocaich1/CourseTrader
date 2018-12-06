@@ -9,7 +9,6 @@ var ShoppingCart = (function ($) {
         emptyCartBoxFull = false,
         builtCart = document.getElementById("products-in-cart"),
         cartQuantity = document.getElementById("offcanvas-cart-number"),
-        badgeQuantity = document.getElementById('my-cart-badge'),
         emptyButton = document.getElementById("empty-cart-button"),
 
         // Fake JSON data array here should be an API call. This contains the products information stored in an array JSON format. need more updated info plugged in for details. 
@@ -19,7 +18,7 @@ var ShoppingCart = (function ($) {
                 name: "Managerial Accounting",
                 description: "Introduction to managerial accounting",
                 imageUrl: "img/book/ACC2203.PNG",
-                price: 25,
+                price: 125,
                 productNum: "product1"
     },
             {
@@ -27,7 +26,7 @@ var ShoppingCart = (function ($) {
                 name: "book2",
                 description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
                 imageUrl: "img/book/CIS4800.PNG",
-                price: 25,
+                price: 80,
                 productNum: "product2"
     },
             {
@@ -139,14 +138,9 @@ var ShoppingCart = (function ($) {
         productsInCart = [];
     //create functions
 
-    /*I have used template strings (ES6 Feature) to build the html. 
-    I have used an onclick event on this button to close it out but 
-    i still cannot delete the instance from the div it leaves behind 
-    something and disrupts the onclick process. possibly better to 
-    turn into alert but same risidual problem. 
-    I would prefer to put on click events and use a remove mothod and update*/
 
-    //Function that creates a new product img in the sidebar of the html when add to acrt is pushed.
+
+    //Function that creates a new product img in the sidebar of the html when add to cart is pushed.
     var generateProduct = function (id) {
         productsInCart.forEach(function (item) {
             var al = item.product;
@@ -191,15 +185,16 @@ var ShoppingCart = (function ($) {
             emptyCartBoxFull = true;
             emptyCartBox.style.display = "none";
             generateProduct(id);
+
         } else {
             productsInCart.forEach(function (item) {
                 item.quantity++;
+
             });
         }
         updateQuantity();
-        badgeQuantity.innerHTML = productsInCart.length;
+        updateBadge();
     }
-
     // This function checks if project is already in productsInCart array through its id.
     function productFound(productId) {
         return productsInCart.find(function (item) {
@@ -211,6 +206,11 @@ var ShoppingCart = (function ($) {
     //function that updates quantity. also want it to update other quantities
     function updateQuantity() {
         cartQuantity.innerHTML = productsInCart.length;
+    }
+
+    function updateBadge() {
+        var badgeQuantity = document.getElementById('my-cart-badge');
+        badgeQuantity.innerHTML = productsInCart.length;
     }
 
 
